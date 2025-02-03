@@ -1,0 +1,561 @@
+.svg-turkiye-haritasi {
+  max-width: 1140px;
+  margin: 1.5cm auto 0 auto; 
+  text-align: center;
+  position: relative; 
+}
+
+body {
+  background-color: #fffaf6; 
+  margin: 0; 
+}
+
+.svg-turkiye-haritasi svg {
+  width: 100%;
+  height: auto;
+}
+
+.il-isimleri {
+  position: absolute;
+  z-index: 2;
+}
+
+.il-isimleri div {
+  font-family: 'Open Sans';
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+  
+#svg-turkiye-haritasi path:hover {
+  fill: #6ac59e;
+}
+
+#svg-turkiye-haritasi path {
+  cursor: pointer;
+  transition: fill 0.3s ease;
+  fill: #458368;
+}
+
+  .nav-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 2px;
+}
+
+.button {
+    font-weight: 700;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #5b5b5b;
+}
+
+.link {
+    font-weight: 700;
+    padding: 15px 25px;
+    font-size: 17px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #5b5b5b;
+} 
+
+.login-button{
+  font-weight: 70px;
+    padding: 13px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button {
+  background: #fffaf6; 
+  color: #000000;
+  font-size: 18px;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  transition: all 0.3s ease; 
+}
+
+.logout-button:hover {
+  background: #fffaf6; 
+  color: #5b5b5b;
+}
+
+.button:disabled {
+  background-color: #000000;
+  color: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: not-allowed;
+}
+
+header {
+  padding: 13px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Open Sans';
+  position: relative;  
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: absolute;  
+  top: 10px;  
+  left: 70px;  
+}
+
+.logo {
+  width: 45px; 
+  height: auto;
+  margin-right: 20px; 
+  border-radius: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger {
+  position: absolute; 
+  top: -17px;       
+  left: 22px;     
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 4.5px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  top: 0dvh; 
+  font-family: 'Open Sans';
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  display: none; 
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.menu ul li { 
+  text-align: left;
+  margin: 10px 0; 
+  font-size: 14px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+}
+
+.menu ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: -250px;
+  margin-bottom: -5px; 
+  padding-bottom: 0;
+  background-color: var(--main-color);
+  max-height: 1rem;
+  text-align: center;
+}
+
+footer .sosyalbutonlar{
+margin-top: 20px;
+display: inline-block;
+position: relative;
+left: 10px;
+}
+
+footer .sosyalbutonlar a  {
+background:#a1a1a1;
+text-decoration: none;
+color: #FFF;
+width: 60px;
+height: 60px;
+display: inline-block;
+border-radius: 10px;
+margin-right: 20px;
+font-size: 30px;
+overflow: hidden;
+position: relative;
+line-height: 60px;
+text-align: center;
+}
+  
+footer .sosyalbutonlar a{  
+  transition: transform 0.4s linear 0s, 
+border-top-left-radius 0.1s linear 0s, 
+border-top-right-radius 0.1s linear 0.1s, 
+border-bottom-right-radius 0.1s linear 0.2s, 
+border-bottom-left-radius 0.1s linear 0.3s; 	
+}
+
+footer .sosyalbutonlar .twitter:hover   {
+  background-color: #00aced;
+  transform: rotate(360deg);
+  border-radius: 50%;	 
+}
+
+footer .sosyalbutonlar .instagram:hover   {
+    background-color: #bc2a8d;
+    transform: rotate(360deg);
+    border-radius: 50%;	 
+}
+
+footer .sosyalbutonlar .linkedin:hover   {
+    background-color: #00aced;
+    transform: rotate(360deg);
+    border-radius: 50%;	 
+}
+
+footer .sosyalbutonlar .facebook:hover {
+  background-color: #3b5998;
+  transform: rotate(360deg);
+  border-radius: 50%;	 
+}
+
+footer .sosyalbutonlar .youtube:hover {
+  background-color: #ff0000;
+  transform: rotate(360deg);
+  border-radius: 50%;	 
+}
+
+footer .credit{
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 300;
+  padding-top: 1.5rem;
+}
+
+.modal {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 600px;
+  max-height: 80vh; /* Üretici ve ürünler için daha fazla yer */
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: none;
+}
+
+.modal.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.close-modal {
+  position:sticky;        
+  z-index: 1050;
+  top: 5px;               
+  left: 17cm;               
+  font-size: 20px;
+  color: #444;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;             
+}
+
+.close-modal:hover {
+  color: #222;
+}
+
+.modal-header h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;margin: 0 auto; 
+  padding: 10px 0; 
+  width: 100%; 
+}
+
+.modal .content {
+  width: 100%;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 490px;
+  max-height: 60vh;
+  /* overflow-y: auto; */
+  padding-right: 10px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.category-item:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.category-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.category-item p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.category-item a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.category-item a:hover {
+  color: darkblue;
+}
+
+.no-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.product-list,
+.producer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Kutular arasındaki boşluk */
+  width: 490px; /* Modal kutucuklarının boyutu buradan
+  max-height: 60vh; /* Ürün listesi için maksimum yükseklik */
+  /* overflow-y: auto; Dikey scrollbar ekler */
+  padding-right: 10px; /* Kaydırma çubuğu ile içerik arasında boşluk */
+  
+}
+.product-item,
+.producer-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.product-item:hover,
+.producer-item:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.product-item h3,
+.producer-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  text-align: center; 
+}
+
+.product-item p,
+.producer-item p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.producer-item a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.producer-item a:hover {
+  color: darkblue;
+}
+
+
+.reviews {
+  margin-top: 20px;
+}
+
+.reviews .review {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.reviews .review:first-child {
+  border-top: none;
+}
+
+.review p {
+  font-size: 14px;
+  color: #333;
+}
+
+.review .reviewer {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.review .rating {
+  color: #f1c40f; /* Altın sarısı renk */
+}
+
+
+.rating-container {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.star {
+  width: 24px; /* Daha büyük veya daha küçük yapmak için ayarlayın */
+  height: 24px;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ffa500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"%3E%3C/polygon%3E%3C/svg%3E') no-repeat center center; /* Boş yıldız ikonu */
+  background-size: contain;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.star.selected {
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffa500" stroke="%23ffa500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"%3E%3C/polygon%3E%3C/svg%3E') no-repeat center center; /* Dolu yıldız ikonu */
+  background-size: contain;
+}
+
+
+.star:hover {
+  color: gold; 
+}
+
+.add-review {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start; /* Sol hizalama */
+  width: 100%; /* Tam genişlik */
+  margin-left: auto; /* Ortalamak için */
+  margin-right: auto;
+}
+
+.add-review textarea {
+  width: 100%; /* Yorum kutusunun genişliği */
+  height: 50px; /* Yorum kutusunun yüksekliği */
+  resize: none; /* Yeniden boyutlandırmayı kapat */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box; /* Padding dahil genişlik */
+}
+
+.add-review button {
+  align-self: flex-end; /* Sağ alt köşeye hizala */
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-review button:hover {
+  background-color: #0056b3;
+}
+
+.back-to-categories, .back-to-products{
+  position: sticky;
+  z-index: 5;
+  cursor: pointer;  
+  font-size: 24px;   
+  font-weight: bold; 
+  color: black;      
+  background: none;  
+  border: none;     
+  padding: 0;        
+  top: 1mm;
+}

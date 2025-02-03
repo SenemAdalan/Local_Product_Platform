@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/hakkimizda.css">
+</head>
+<body>
+    <!-- Sabit Üst Kısım -->
+    <header>
+        <div class="logo-container">
+            <a href="../html/proje.html">
+                <img src="../image/logo.jpg" alt="Yerel Ürün Platformu Logo" class="logo">
+            </a>
+            <h1><a href="../html/proje.html">Yerel Ürün Platformu</a></h1>
+        </div>
+    </header>
+
+    <div class="nav-buttons">
+
+    </div>
+
+    <div class="menu-container">
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../html/hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="../html/iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+  
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const menu = document.querySelector('.menu');
+            
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+                menu.style.opacity = '0';
+            } else {
+                menu.style.display = 'block';
+                setTimeout(function() {
+                    menu.style.opacity = '1';
+                }, 10);
+            }
+        });
+    </script>
+
+    <!-- İçerik -->
+    <main>
+        <section class="about-section">
+            <h2>Hakkımızda</h2>
+            <div class="about-content">
+                <!-- Sol Resim -->
+                <img src="../image/resim1.jpg" alt="Resim 1" class="left-image">
+                
+                <!-- Hakkımızda Metni -->
+                <div class="about-text">
+                    <p>
+                        Yerel Ürün Platformu, yerel üreticiler ile tüketicileri dijital ortamda buluşturan bir platformdur. Amacımız kullanıcılarımıza yaşadıkları bölgedeki gıda üreticilerine kolay erişim sağlayarak taze ve sağlıklı ürünlere ulaşmalarını mümkün kılmaktır.
+                    </p>
+                    <p>
+                        Platformumuz, yerel üreticilerin dijital ortamda daha görünür hale gelmesini sağlayarak geniş bir kitleye ulaşmalarını desteklerken aynı zamanda yerel ekonomilerin güçlenmesine de katkıda bulunmaktadır. Karbon ayak izini azaltmayı ve sürdürülebilir alışveriş anlayışını yaygınlaştırmayı hedeflemektedir.
+                    </p>
+                </div>
+                
+                <!-- Sağ Resim -->
+                <img src="../image/resim2.jpg" alt="Resim 2" class="right-image">
+            </div>
+
+            <!-- Hakkımızda Altında Diğer Resimler -->
+            <div class="bottom-images">
+                <img src="../image/resim3.jpg" alt="Resim 3" class="bottom-image">
+                <img src="../image/resim4.jpg" alt="Resim 4" class="bottom-image">
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/svg-turkiye-haritasi.js"></script>
+    <script>
+      svgturkiyeharitasi();
+    </script>
+
+    <!-- Altbilgi -->
+    <footer>
+        <div class="sosyalbutonlar">
+            <a href="https://www.instagram.com/kocaelisaglik.t.uni/" target="_blank" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/school/kostu/" target="_blank" class="linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/kocaelisaglik.t.universitesi" target="_blank" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UC3-TsftiUxyObpPGce2cHDQ?view_as=subscriber" target="_blank" class="youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
+          <p>&copy; 2024 Yerel Ürün Platformu. Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>

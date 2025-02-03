@@ -1,0 +1,309 @@
+/* Genel Stil */
+body {
+    background-color: #fffaf6; 
+    margin: 0; 
+  }
+
+.nav-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 2px;
+}
+.button {
+    font-weight: 700;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+    
+.button:hover {
+    background-color: #5b5b5b;
+}
+    
+.link {
+    font-weight: 700;
+    padding: 15px 25px;
+    font-size: 17px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #5b5b5b;
+} 
+
+.login-button{
+  font-weight: 70px;
+    padding: 13px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button {
+  background: #fffaf6; 
+  color: #000000;
+  font-size: 18px;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  transition: all 0.3s ease; 
+}
+
+.logout-button:hover {
+  background: #fffaf6; 
+  color: #5b5b5b;
+}
+
+.button:disabled {
+  background-color: #000000;
+  color: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: not-allowed;
+}
+
+header {
+    padding: 13px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Open Sans';
+    position: relative;  
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;  
+    top: 10px;  
+    left: 70px;  
+  }
+  
+  .logo {
+    width: 45px; 
+    height: auto;
+    margin-right: 2px; 
+    border-radius: 20px;
+  }
+  
+  h1 {
+      font-size: 24px;
+      color: #333;
+      margin: 0;
+  }
+
+  h1 a {
+    text-decoration: none; 
+    color: inherit; 
+    left: 70px;  
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger {
+  position: absolute; 
+  top: -17px;       
+  left: 22px;     
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+  
+.bar {
+    height: 4.5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    top: 0dvh; 
+    font-family: 'Open Sans';
+  }
+  
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 22px;
+    display: none; 
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s;
+  }
+  
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+.menu ul li { 
+    text-align: left;
+    margin: 10px 0; 
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+  
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+  
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.about-text p {
+  font-size: 21px; 
+  line-height: 1.6;
+}
+
+.left-image, .right-image, .bottom-image {
+  width: 200px;  /* Resimlerin genişliği 200px olarak ayarlandı */
+  height: auto;
+  border-radius: 8px;
+}
+
+.bottom-images {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 20px;
+}
+
+/*Başlık*/
+.about-section h2 {
+  font-size: 40px; 
+  color: #000; 
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.logo-container h1 {
+  margin-left: 15px; 
+}
+
+
+footer {
+  text-align: center;
+}
+
+footer {
+  margin-bottom: -5px; 
+  padding-bottom: 0;
+  background-color: var(--main-color);
+  max-height: 1rem;
+  text-align: center;
+}
+
+footer .sosyalbutonlar{
+margin-top: 20px;
+display: inline-block;
+position: relative;
+left: 10px;
+}
+
+footer .sosyalbutonlar a  {
+background:#a1a1a1;
+text-decoration: none;
+color: #FFF;
+width: 60px;
+height: 60px;
+display: inline-block;
+border-radius: 10px;
+margin-right: 20px;
+font-size: 30px;
+overflow: hidden;
+position: relative;
+line-height: 60px;
+text-align: center;
+}
+  
+footer .sosyalbutonlar a{  
+  transition: transform 0.4s linear 0s, 
+border-top-left-radius 0.1s linear 0s, 
+border-top-right-radius 0.1s linear 0.1s, 
+border-bottom-right-radius 0.1s linear 0.2s, 
+border-bottom-left-radius 0.1s linear 0.3s; 	
+}
+
+footer .sosyalbutonlar .twitter:hover   {
+  background-color: #00aced;
+  transform: rotate(360deg);
+  border-radius: 50%;	 
+}
+
+footer .sosyalbutonlar .instagram:hover   {
+    background-color: #bc2a8d;
+    transform: rotate(360deg);
+    border-radius: 50%;	 
+}
+
+footer .sosyalbutonlar .linkedin:hover   {
+    background-color: #00aced;
+    transform: rotate(360deg);
+    border-radius: 50%;	 
+}
+
+footer .sosyalbutonlar .facebook:hover {
+  background-color: #3b5998;
+  transform: rotate(360deg);
+  border-radius: 50%;	 
+}
+
+footer .sosyalbutonlar .youtube:hover {
+  background-color: #ff0000;
+  transform: rotate(360deg);
+  border-radius: 50%;	 
+}
+

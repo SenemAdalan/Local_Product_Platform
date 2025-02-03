@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/iletisim.css">
+</head>
+<body>
+    <!-- Sabit Üst Kısım -->
+    <header>
+        <div class="logo-container">
+            <a href="../html/proje.html">
+                <img src="../image/logo.jpg" alt="Yerel Ürün Platformu Logo" class="logo">
+            </a>
+            <h1><a href="../html/proje.html">Yerel Ürün Platformu</a></h1>
+        </div>
+    </header>
+
+    <div class="nav-buttons">
+        <a href="#" class="link">Kayıt Ol</a>
+        <button class="button">Giriş Yap</button>
+    </div>
+
+    <div class="menu-container">
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../html/hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="../html/iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+  
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const menu = document.querySelector('.menu');
+            
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+                menu.style.opacity = '0';
+            } else {
+                menu.style.display = 'block';
+                setTimeout(function() {
+                    menu.style.opacity = '1';
+                }, 10);
+            }
+        });
+    </script>
+
+    <div class="contact-header">
+        <h1>Bize Ulaşın</h1>
+        <p>Herhangi bir sorunuz, geri bildiriminiz veya öneriniz varsa bizimle iletişime geçebilirsiniz.</p>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div class="contact-details">
+                <h2>Telefon</h2>
+                <p>0262 999 80 85</p>
+                <p>0850 450 28 28</p>
+            </div>
+        </div>
+    
+        <div class="contact-item">
+            <i id="email-icon" class="fas fa-envelope"></i>
+            <div class="contact-details">
+                <h2>Email</h2>
+                <p><a href="mailto:info@kocaelisaglik.edu.tr">info@kocaelisaglik.edu.tr</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-address">
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="contact-details">
+                <h2>Adres</h2>
+                <p><a href="https://www.google.com/maps/place/Kocaeli+Sa%C4%9Fl%C4%B1k+ve+Teknoloji+%C3%9Cniversitesi/@40.6983503,29.8818577,17z/data=!3m1!4b1!4m6!3m5!1s0x14cb4f17ddca70df:0xe891bc68cc79d01c!8m2!3d40.6983463!4d29.8844326!16s%2Fg%2F11jdhsm_pg?entry=ttu&g_ep=EgoyMDI0MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Yeniköy Mahallesi Ilıca Caddesi No:29, Başiskele/Kocaeli</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/svg-turkiye-haritasi.js"></script>
+    <script>
+      svgturkiyeharitasi();
+    </script>
+
+
+    <!-- Google Maps iframe -->
+    <div class="map-container" style="text-align: center; margin-top: 40px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.893172360997!2d29.88185767502753!3d40.69835033845278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb4f17ddca70df%3A0xe891bc68cc79d01c!2sKocaeli%20Sa%C4%9Fl%C4%B1k%20ve%20Teknoloji%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1734033964138!5m2!1str!2str" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Altbilgi -->
+    <footer>
+        <div class="sosyalbutonlar">
+          <a href="https://www.instagram.com/kocaelisaglik.t.uni/" target="_blank" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/school/kostu/" target="_blank" class="linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/kocaelisaglik.t.universitesi" target="_blank" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/channel/UC3-TsftiUxyObpPGce2cHDQ?view_as=subscriber" target="_blank" class="youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+        </div>
+        <p>&copy; 2024 Yerel Ürün Platformu. Tüm Hakları Saklıdır.</p>
+      
+      </footer>
+</body>
+</html>
