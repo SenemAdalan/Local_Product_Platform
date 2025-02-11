@@ -83,6 +83,7 @@ C:\xampp\htdocs\yerel_urun_platformu
 ```
 
 - phpMyAdmin üzerinden **yerel_urun_platformu** adında bir veritabanı oluşturun.
+- Proje dosyası içinde yer alan **local_product_platform.sql** dosyasını veri tabanına yükleyin.
 - Tarayıcınızdan http://localhost/yerel_urun_platformu/html/proje.html adresine giderek platformu test edin.
 ---
 
