@@ -9,7 +9,7 @@
 ✅ Kullanıcılar, üreticilere **yorum ve puan vererek** diğer kullanıcıların bilinçli seçimler yapmasına yardımcı olur.  
 
 - **Yapılış Tarihi:** 7 Ocak 2025
-- **Son Güncelleme:** 11 Şubat 2025
+- **Son Güncelleme:** 11 Şubat 2025 
 
 ---
 
